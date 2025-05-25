@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rashed Mahmud">
+    <meta name="description" content="This is The langing page CoolQuest officila">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolQuest - Landing page</title>
+    <link rel="shortcut icon" href="/assets/coolquest-high-resolution-logo-DyxLtkmD.png" type="image/x-icon">
+
+    <!-- Tailwind css output link -->
+
+    <!-- fontawosome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" crossorigin href="/assets/index-5cSbaKO5.css">
+</head>
+
+<body class="font-poppins">
+
+    <!-- header -->
+    <header class="container header-section text-white">
+
+        <!-- nav -->
+        <nav
+            class="flex justify-between items-center bg-white p-3 rounded-[5rem] fixed top-2 left-6 right-6 sm:left-10 sm:right-10 lg:left-[8rem] lg:right-[8rem] z-100 shadow-2xl">
+            <div>
+                <img src="data:image/png;base64,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" alt="logo">
+            </div>
+            <ul class="hidden items-center gap-8">
+                <li><a class="text-green-950 hover:text-gray-600" href="#about">About Us</a></li>
+                <li><a class="text-green-950 hover:text-gray-600" href="#service">Service</a></li>
+                <li><a class="text-green-950 hover:text-gray-600" href="#past-work">Past work</a></li>
+                <li><a class="text-green-950 hover:text-gray-600" href="#reviews">Reviews</a></li>
+            </ul>
+            <ul class="hidden items-center gap-8 nav-ul transition-all duration-300 ease-in-out" id="nav-ul">
+                <li><a class="text-green-950 hover:text-gray-600" href="#about">About Us</a></li>
+                <li><a class="text-green-950 hover:text-gray-600" href="#service">Service</a></li>
+                <li><a class="text-green-950 hover:text-gray-600" href="#past-work">Past work</a></li>
+                <li><a class="text-green-950 hover:text-gray-600" href="#reviews">Reviews</a></li>
+            </ul>
+            <div class="nav-getbtn" id="nav-getbtn">
+                <button class="btn rounded-4xl" type="button">Get Free
+                    Quote</button>
+            </div>
+
+            <div class="btn-bar mr-5" id="btn-bar">
+                <button class="text-black text-2xl"><i class="fa-solid  fa-bars-staggered"></i></button>
+            </div>
+
+        </nav>
+
+        <!-- hero section -->
+        <section class="hero-section flex  flex-col xl:flex-row items-center pt-25 md:pt-35 pb-10 md:pb-20">
+            <div class="hero-text w-full xl:w-1/2">
+                <h1 class="text-[3rem] lg:text-[4rem]">Reliable HVAC for <br> Every Season</h1>
+                <p class="flex gap-2 my-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFrSURBVHgBzVWBUYQwEDycLwA7SAl04NuBVoBW4HfAd+BYgVoBdgAd8B08XwF0EJdxI5mQhDiDjjuzE7jkNpfkchH5L9BaF2BNKtkSFB/IM9sixTcLCOZojMANeABH8Ja2Bsxpv9B2yrJslIRoK71EY2/L9M2tclFFV8DIB/ANfKd5RGSnQDAFVzLhASzB6+BK4LBnJHv5IUK+V/LLcCdQbFcPa9pOJ12Nzz7kYFKxlnXxJ479cOyNN4WZFSbH1Yp45cssS2d5T5hyKeIFxevIGGWvbmf15QGHZ/a9gJNwDz5KHKMvMu8W4f/AqAe2KqTqbJEKTdJ4HE3fq0SA/k7H6hQ6joyyCESXR8TN+ZS23b0HLduFEK5/v1LMjM8lNsHm2Dn/pqiVWOq3EZG3PmdPsbM1/LDOwUanl+W68Yw7unopD44Cp7vQg/fyleOdzHejNZEnPTiBCU0pPuv56byTLaHnV6zWie/xn+ATFnfWkQ6wnAEAAAAASUVORK5CYII=" alt="checkmark">Certified
+                    &
+                    Experienced Technicians</p>
+                <p class="flex gap-2 my-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGKSURBVHgBxVWLcYMwDBVZoIzgDZoR2KBskGxQOgF0g25AOkHoBIxANzCdADqBah0yVsEYp71e353OiT5+krFkgD9GEuOEiI9myRfqtyRJXvZiD3ITI1deFfgTObL4kkiNlEZaI6el8YwTOl6bRSCR1kYGFkrkJBNhHUHzWkgCYtX8Wwm5oINmv5ZJLGrhn/EenUySFBU7W4dMZFt5jgwWCRB5LvSrClIukYy5OC4FO+AYbRPk/1dvrHAmSSESnGDHFauQoy1ZBTZSgUqIoIaAA246wHwZmoDdfsu5+oOwZ7w+Qxh3AduF17OP4MHIaLqzhx+CY0nufQRU1jv8Hr0R5SOIwWjkGHN9fQQfknkDT0zSBkhoVn2utNR5oSsq/GyvNBs2wskXmLKxgh3wRqlHH+wj6zDccsYL0mAfyW7s8PZRoWNGRYkOGuOHXSfiyr3Nqd1zdBOyxu1xXaIb6xm6UVH4CAppwPWDM6B7cLTQf0uASeZ9dh99Ds5gGiX2u/Qwdf2rGQ8j/Ce+AB4qhup68A8iAAAAAElFTkSuQmCC" alt="clock">Fast, Reliable Service</p>
+                <p class="flex gap-2 my-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBzVWBccIwDFQ6ASN4AzpCRmCDsEGyQdkAb5B2koyQbgAbpBu40vEuPqPKSQ4O/k5nLKSXLMkO0SshhNCyfNCjwORjuGBg2dA9IYQgH5PV0b3AZDWIZd2xTAiy/iQoxYDfn0KqBBxpDdjxGK5osPaZzR76Iy1B4uhZTkkgp9h6/LebS+5Aekr2Up7O8BnQk3I/QKZma/i8w+dQMtwgk54WIg6BeYqk9jUtDxCnam8Z+XQUE/1fT7BvtZ5op3/LbLYs32RnKm+RZ9FKcWZxlvMQL9Z/5FYzS/43t3UJOWykRJ4Mg05rck6e9wS6OKqNFUAdUwTukr0WII6pIwuSZTGTW5+2VL7cYUQ23QzbBrbzX1WUKn5YeqmvYlOH67Oy7ruAck0gmeIYZrqDxVHNCOJ4qVnkFFuoz3S5kF9VVf3QM/EL5/ki2azzEhEAAAAASUVORK5CYII=" alt="hot prize">Transparent, Affordable Pricing
+                </p>
+                <div class="flex lg:justify-center items-center xl:justify-start">
+                    <div class="bg-white p-4 mt-5 rounded-xl lg:w-2/3">
+                        <form class="w-full grid grid-cols-2 gap-4">
+                            <div>
+                                <input class="header-input" type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                            <div>
+                                <input class="header-input" type="text" name="phone" id="phone" placeholder="Phone">
+                            </div>
+                            <div>
+                                <select class="header-input text-gray-400" name="service">
+                                    <option value="null" disabled selected>Service</option>
+                                    <option value="Ac Servicing">Ac Servicing</option>
+                                    <option value="">Car Servicing</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="bg-green-800 py-2 w-full rounded-sm" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mt-13">
+                    <p>Certified Installer</p>
+                    <div class="flex items-center gap-5 mt-5">
+                        <img class="w-20 md:w-fit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAbCAYAAAAqCUKuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMNSURBVHgB3ZnvldowDMAVHgOkE9SdoHSCphMcNwFhgqMTkE7QuwmgE9wxAbkJSieADaATqBI2PUhjWSYOH/p7Ty+P2JYTRX9sk0EARMzpUpCMSN67279JtiS/SDZZlh3gPyLzNZAxCrrMwRokRE2yJOP8gBvjPtp3SAS9wzRrmcTQZQE6YzTZkNyT4p12AM33ky650OWJ9D0K4w1Yr00CzZU1JxiR7LEbW/egQdgbFfr2AR0GE8I6B+fK6bIG+atpMKwHrVuHKBV9crShfDOORnEvoDHIDmyIhBKrAV2cfwYdc7g1ZJR5wKvWza9Fv0u0oSKRC3OOMY7coycUPnv3nCo5Kc1Rfrm18GIjlJkJY5cYR3WlURYQCYfPGKy7+5j6GihRcyh9Az8fhbY7iEMbap0Zglx6V6HySu0Vf3WIgPqX4M9fvNaZtNznSlXQfDX0DBtF+po1KIhZlzh8XrIiWUK7UZix9pm6wEYxQvsGEoM2YY49zc/sCdSHq1ubJ004t0RuKzhnmkCfw4XOQJIatWlAWzm2SnlojC2F+YzrIyXhu4a+FIu3i2Q8hIAFPff5KxrQ8a7x2xca9VkY1kI/rmgr6BGuPpIrSvkmGucJhaf5/EVfwA8n3K6rbpGQUT5AWgqh7a8hXHzXQt8Z9AgbRUqmST0F/CGxa6lgr+DnAXpk6Cb3VQNOqF9bsn1N8uXs9zME9k2B0Knx3wqxAz/HTaJyzcIeGMpBu4tfGN6+ixs7DO+bKtevxLQ8Or2h6lNBJANnbSmvzEjxvMUYvO9hD6lAR2qXn2BPCfd0nvIU6MdL+S3a3fIC7WkZyxgUoA2NEaSFDVJCD5zWKeyKnASN0NeAfm3SRGW8K+CF3Ask5ugpLpHeQ3/0VS0KSO+Bb8eR7hhgCtfDIVi33OeybjxjeBUrApdVro2+vPANl823qIdPtmZu7BrjmCifqcthegWRDJo3eBFFwitZ9ppaGMshx97xSfoLIsCrsl+ve50mWagD2rLHcZs7YWNs2s5QXF91mdSew8TqbXCI/QfzD3SVKOJhWdCJAAAAAElFTkSuQmCC" alt="company-1">
+                        <img class="w-25 md:w-fit" src="data:image/png;base64,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" alt="company-2">
+                        <img class="w-30 md:w-fit" src="data:image/png;base64,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" alt="company-3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image xl:w-1/2 xl:mt-[-3rem] mt-5 2xl:mt-0">
+                <div class="relative">
+                    <img class="relative bottom-2 z-30" src="/assets/hero-DHX1dgMw.png" alt="hero-image">
+                    <div
+                        class="bg-white w-full h-50 sm:h-80 lg:h-110 xl:h-80 absolute top-10 sm:top-30 lg:top-45 xl:top-20 2xl:top-30 rounded-tl-full ">
+                    </div>
+                    <div
+                        class="bg-white w-30 sm:w-40 py-1 sm:py-3 flex flex-col items-center justify-center absolute rounded-2xl shadow-2xl bottom-7 sm:left-12 lg:left-35 xl:left-12 z-40 border-4 border-gray-100">
+                        <img class="mb-2" src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.0014%2016.3109C30.0014%2015.1598%2029.9061%2014.3198%2029.6998%2013.4487H16.2871V18.6442H24.1601C24.0014%2019.9354%2023.1442%2021.8798%2021.2394%2023.1864L21.2127%2023.3604L25.4536%2026.58L25.7474%2026.6087C28.4458%2024.1665%2030.0014%2020.5731%2030.0014%2016.3109Z'%20fill='%234285F4'/%3e%3cpath%20d='M16.2863%2030C20.1434%2030%2023.3814%2028.7555%2025.7466%2026.6089L21.2386%2023.1865C20.0323%2024.011%2018.4132%2024.5866%2016.2863%2024.5866C12.5086%2024.5866%209.30225%2022.1444%208.15929%2018.7688L7.99176%2018.7827L3.58208%2022.1272L3.52441%2022.2843C5.87359%2026.8577%2010.699%2030%2016.2863%2030Z'%20fill='%2334A853'/%3e%3cpath%20d='M8.16013%2018.7688C7.85855%2017.8977%207.68401%2016.9643%207.68401%2015.9999C7.68401%2015.0354%207.85855%2014.1021%208.14426%2013.231L8.13627%2013.0455L3.67132%209.64734L3.52524%209.71544C2.55703%2011.6132%202.00146%2013.7444%202.00146%2015.9999C2.00146%2018.2555%202.55703%2020.3865%203.52524%2022.2843L8.16013%2018.7688Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M16.2864%207.4133C18.9689%207.4133%2020.7784%208.54885%2021.8102%209.4978L25.8419%205.64C23.3658%203.38445%2020.1435%202%2016.2864%202C10.699%202%205.8736%205.1422%203.52441%209.71549L8.14345%2013.2311C9.30229%209.85555%2012.5086%207.4133%2016.2864%207.4133Z'%20fill='%23EB4335'/%3e%3c/svg%3e" alt="google">
+                        <p class="text-green-950">4.8(698)</p>
+                    </div>
+                    <div
+                        class="bg-white w-30 sm:w-40 p-1 flex flex-col items-center justify-center absolute rounded-2xl shadow-2xl top-20 sm:top-40 right-5 sm:right-10 lg:top-60 xl:top-38 lg:right-30 xl:right-10 z-40 border-4 border-gray-100">
+                        <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.5%2011.1833V8.28029C21.5%206.64029%2021.5%205.82028%2021.0959%205.28529C20.6918%204.75029%2019.7781%204.49056%2017.9507%203.9711C16.7022%203.6162%2015.6016%203.18863%2014.7223%202.79829C13.5234%202.2661%2012.924%202%2012.5%202C12.076%202%2011.4766%202.2661%2010.2777%202.79829C9.39839%203.18863%208.29784%203.61619%207.04933%203.9711C5.22193%204.49056%204.30822%204.75029%203.90411%205.28529C3.5%205.82028%203.5%206.64029%203.5%208.28029V11.1833C3.5%2016.8085%208.56277%2020.1835%2011.094%2021.5194C11.7011%2021.8398%2012.0046%2022%2012.5%2022C12.9954%2022%2013.2989%2021.8398%2013.906%2021.5194C16.4372%2020.1835%2021.5%2016.8085%2021.5%2011.1833Z'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3cpath%20d='M15%2011.5C15%2012.8807%2013.8807%2014%2012.5%2014C11.1193%2014%2010%2012.8807%2010%2011.5C10%2010.1193%2011.1193%209%2012.5%209C13.8807%209%2015%2010.1193%2015%2011.5Z'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="google">
+                        <p class="text-green-950"> C20-987654</p>
+                    </div>
+                    <div class="absolute top-5 sm:top-30 lg:top-50 xl:top-20 2xl:top-12 xl:left-3 2xl:left-[-1rem]">
+                        <img class="w-40 sm:w-60 2xl:w-full" src="/assets/warranty-COCn6ITU.png" alt="warranty card">
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="h-40 sm:h-50 lg:h-60 xl:h-50 w-1/2 relative">
+                        <img class="size-full rounded-b-md shadow-lg" src="/assets/hero2-Cy5O9CCo.jpg" alt="work with ac">
+                        <div class="absolute bottom-0 right-0 bg-green-800 p-2 rounded-md">View Details</div>
+                    </div>
+                    <div class="h-40 sm:h-50 lg:h-60 xl:h-50 w-1/2 relative">
+                        <img class="size-full rounded-b-md shadow-lg" src="/assets/hero3-BastXd4b.jpg" alt="work with ac">
+                        <div class="absolute bottom-0 right-0 bg-green-800 p-2 rounded-md">View Details</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <!-- trusted by families -->
+        <section id="reviews" class="trusted by families  my-10 py-10 container">
+            <h2>Trusted by Families Like Yours</h2>
+            <div class="flex flex-col lg:flex-row lg:gap-5 xl:gap-10 mt-8">
+                <div
+                    class="card lg:w-1/3 flex flex-col justify-center items-center py-5 px-10 mb-10 lg:px-2 xl:px-10 shadow-xl rounded-4xl">
+                    <div class="mb-3"><img class="rounded-full" src="/assets/profile1-Bqx38-NH.jpg" alt="profile-pic" width="70">
+                    </div>
+                    <h4>Mason Carter</h4>
+                    <div class="mb-5">
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                    </div>
+
+                    <p class="text-center mb-5">
+                        “Super professional service, quick installation, and everything works perfectly. Highly
+                        recommend!”
+                    </p>
+
+                    <img class="size-8 mb-1" src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.0014%2016.3109C30.0014%2015.1598%2029.9061%2014.3198%2029.6998%2013.4487H16.2871V18.6442H24.1601C24.0014%2019.9354%2023.1442%2021.8798%2021.2394%2023.1864L21.2127%2023.3604L25.4536%2026.58L25.7474%2026.6087C28.4458%2024.1665%2030.0014%2020.5731%2030.0014%2016.3109Z'%20fill='%234285F4'/%3e%3cpath%20d='M16.2863%2030C20.1434%2030%2023.3814%2028.7555%2025.7466%2026.6089L21.2386%2023.1865C20.0323%2024.011%2018.4132%2024.5866%2016.2863%2024.5866C12.5086%2024.5866%209.30225%2022.1444%208.15929%2018.7688L7.99176%2018.7827L3.58208%2022.1272L3.52441%2022.2843C5.87359%2026.8577%2010.699%2030%2016.2863%2030Z'%20fill='%2334A853'/%3e%3cpath%20d='M8.16013%2018.7688C7.85855%2017.8977%207.68401%2016.9643%207.68401%2015.9999C7.68401%2015.0354%207.85855%2014.1021%208.14426%2013.231L8.13627%2013.0455L3.67132%209.64734L3.52524%209.71544C2.55703%2011.6132%202.00146%2013.7444%202.00146%2015.9999C2.00146%2018.2555%202.55703%2020.3865%203.52524%2022.2843L8.16013%2018.7688Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M16.2864%207.4133C18.9689%207.4133%2020.7784%208.54885%2021.8102%209.4978L25.8419%205.64C23.3658%203.38445%2020.1435%202%2016.2864%202C10.699%202%205.8736%205.1422%203.52441%209.71549L8.14345%2013.2311C9.30229%209.85555%2012.5086%207.4133%2016.2864%207.4133Z'%20fill='%23EB4335'/%3e%3c/svg%3e" alt="google logo">
+                    <p>Reviewed On Google</p>
+                </div>
+                <div
+                    class="card bg-green-800 text-white lg:w-1/3 flex flex-col justify-center items-center py-5 px-10 mb-10 lg:px-2 xl:px-10 shadow-xl rounded-4xl">
+                    <div class="mb-3"><img class="rounded-full" src="/assets/profile2-D_qvyXd3.jpg" alt="profile-pic" width="70">
+                    </div>
+                    <h4>Chole Anderson</h4>
+                    <div class="mb-5">
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                    </div>
+
+                    <p class="text-center mb-5">
+                        “Very happy with their work! The team was efficient and the new system runs great.”
+                    </p>
+
+                    <img class="size-8 mb-1" src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.0014%2016.3109C30.0014%2015.1598%2029.9061%2014.3198%2029.6998%2013.4487H16.2871V18.6442H24.1601C24.0014%2019.9354%2023.1442%2021.8798%2021.2394%2023.1864L21.2127%2023.3604L25.4536%2026.58L25.7474%2026.6087C28.4458%2024.1665%2030.0014%2020.5731%2030.0014%2016.3109Z'%20fill='%234285F4'/%3e%3cpath%20d='M16.2863%2030C20.1434%2030%2023.3814%2028.7555%2025.7466%2026.6089L21.2386%2023.1865C20.0323%2024.011%2018.4132%2024.5866%2016.2863%2024.5866C12.5086%2024.5866%209.30225%2022.1444%208.15929%2018.7688L7.99176%2018.7827L3.58208%2022.1272L3.52441%2022.2843C5.87359%2026.8577%2010.699%2030%2016.2863%2030Z'%20fill='%2334A853'/%3e%3cpath%20d='M8.16013%2018.7688C7.85855%2017.8977%207.68401%2016.9643%207.68401%2015.9999C7.68401%2015.0354%207.85855%2014.1021%208.14426%2013.231L8.13627%2013.0455L3.67132%209.64734L3.52524%209.71544C2.55703%2011.6132%202.00146%2013.7444%202.00146%2015.9999C2.00146%2018.2555%202.55703%2020.3865%203.52524%2022.2843L8.16013%2018.7688Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M16.2864%207.4133C18.9689%207.4133%2020.7784%208.54885%2021.8102%209.4978L25.8419%205.64C23.3658%203.38445%2020.1435%202%2016.2864%202C10.699%202%205.8736%205.1422%203.52441%209.71549L8.14345%2013.2311C9.30229%209.85555%2012.5086%207.4133%2016.2864%207.4133Z'%20fill='%23EB4335'/%3e%3c/svg%3e" alt="google logo">
+                    <p>Reviewed On Google</p>
+                </div>
+                <div
+                    class="card lg:w-1/3 flex flex-col justify-center items-center py-8 px-10 mb-10 lg:px-2 xl:px-10 shadow-xl rounded-4xl">
+                    <div class="mb-3"><img class="rounded-full" src="/assets/profile3-CBLq80y0.jpg" alt="profile-pic" width="70">
+                    </div>
+                    <h4>Skylar Bennett</h4>
+                    <div class="mb-5">
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                        <span><i class="fa-solid text-yellow-400 fa-star"></i></span>
+                    </div>
+
+                    <p class="text-center mb-5">
+                        “Great experience from start to finish. Honest pricing and top-notch service!”
+                    </p>
+
+                    <img class="size-8 mb-1" src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.0014%2016.3109C30.0014%2015.1598%2029.9061%2014.3198%2029.6998%2013.4487H16.2871V18.6442H24.1601C24.0014%2019.9354%2023.1442%2021.8798%2021.2394%2023.1864L21.2127%2023.3604L25.4536%2026.58L25.7474%2026.6087C28.4458%2024.1665%2030.0014%2020.5731%2030.0014%2016.3109Z'%20fill='%234285F4'/%3e%3cpath%20d='M16.2863%2030C20.1434%2030%2023.3814%2028.7555%2025.7466%2026.6089L21.2386%2023.1865C20.0323%2024.011%2018.4132%2024.5866%2016.2863%2024.5866C12.5086%2024.5866%209.30225%2022.1444%208.15929%2018.7688L7.99176%2018.7827L3.58208%2022.1272L3.52441%2022.2843C5.87359%2026.8577%2010.699%2030%2016.2863%2030Z'%20fill='%2334A853'/%3e%3cpath%20d='M8.16013%2018.7688C7.85855%2017.8977%207.68401%2016.9643%207.68401%2015.9999C7.68401%2015.0354%207.85855%2014.1021%208.14426%2013.231L8.13627%2013.0455L3.67132%209.64734L3.52524%209.71544C2.55703%2011.6132%202.00146%2013.7444%202.00146%2015.9999C2.00146%2018.2555%202.55703%2020.3865%203.52524%2022.2843L8.16013%2018.7688Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M16.2864%207.4133C18.9689%207.4133%2020.7784%208.54885%2021.8102%209.4978L25.8419%205.64C23.3658%203.38445%2020.1435%202%2016.2864%202C10.699%202%205.8736%205.1422%203.52441%209.71549L8.14345%2013.2311C9.30229%209.85555%2012.5086%207.4133%2016.2864%207.4133Z'%20fill='%23EB4335'/%3e%3c/svg%3e" alt="google logo">
+                    <p>Reviewed On Google</p>
+                </div>
+            </div>
+            <div class="text-center my-8">
+                <a href="#" class="btn inline-block">View More</a>
+            </div>
+        </section>
+
+        <!-- certification section -->
+        <section class="certification-section my-10 py-5 container">
+            <h2>Your Trusted HVAC Experts</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-10 py-7">
+                <div class="flex flex-col items-center gap-1">
+                    <img src="/assets/certificate-1-DA95Xubm.png" alt="certificate" width="120">
+                    <h3 class="mt-2">ISO 9001 Certified</h3>
+                    <p class="text-center">Quality Management for HVAC Excellence</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="/assets/certificate-2-lV6TeeD2.png" alt="certificate" width="100">
+                    <h3 class="mt-2">ISO 9001 Certified</h3>
+                    <p class="text-center">Quality Management for HVAC Excellence</p>
+                </div>
+            </div>
+            <div class="row-2 flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-35 md:mt-10">
+                <div class="flex flex-col items-center">
+                    <img src="/assets/certificate-3-W4Ld3SiL.svg" alt="certificate" width="180">
+                    <h3>EPA Certified</h3>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <img src="/assets/certificate-4-Dbgvgz-X.svg" alt="certificate" width="200">
+                    <h3>BBB Accredited</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/assets/certificate-5-BWNl3ASs.svg" alt="certificate" width="100">
+                    <h3>NATE Certified</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- benefit section -->
+        <section class="benefit-section bg-[#EBFFF1] py-10 my-10 container">
+            <h2>The Benefits of Choosing Us</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-5 mt-10">
+                <div
+                    class="card w-full lg:w-1/3 bg-white py-8 px-3 xl:px-10 flex flex-col items-center rounded-2xl hover:shadow-2xl">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAhbSURBVHgB7Zw7cxNXFMfPvbuSRYRtkSoZglm6FBmsoaJDdEkV6DIMD/kTAJ/A8ifAKVMhHmGSCtPRWXTpkF2lY22SmZRrsEGxdu/NOWtpMLv3alerXWnl6DcDxvvS6s8593HOuRdgxowZM/6/MMgBhRtnq0WDV6VkFmNwHl/LouOSSf8nvqSDvzgShMMk2xEc3kghtkrmfttpOg5MkIkIWLr5TY1zfoVJWcNXqOKhCiTHRqlbUsKLovm+NW5BxyZgpV6pHIqFu0zCPRhNsIFIkBv416MPT99uwBjIXECyNoOxVfyoGowXG79d4+Dx7iPIkMwEnKBwQTIVMnUByVW7cmEVhO+qccEOgrWwTdwBJttc0u/ScV3TppOm6VrgvyyruJydx46khtdaeKA6xGfYTIqV/ad/tSBFUhVw/ua5a4KxhxCnjZOyJTjbkIf8Rec324YEVOpWxXXdqgRelwyu4Jexou+S6wXj/VpanU1qApbvLD2IYXU4DIGfTZOvO0079d7yNDYbJCZ+qzsRl9qecXi10/zHhhEZWcBS/SvLcIvPI9xpLA36p3ey8J1EI0JIRwCsfXyyuw4jMJKAJB73ipsDXMdBq1w7+HW0l0xKT8iB/7no+o0Pj3fXICEGJCRSPGzjPNP44eOTnZcwIdy243S3934pLi/u4a+X8U8peA2+f61QXYTu1t4rSEAiC4wUT8D9SVmdDrJG7gntOye1xKEtMEI8Gwx+9eDJzlhmAcNA1li+dOaREOJrYCzk0mSJJlqqu733BwzB0ALOffflJk74v1Wcwp6NX/3YtP+EnNJpO53u9ruNuYuLOKSEWvA8ivj93MX5V4fb7+yYjxxOQH+oAnBNccoXr9NMNp4bN4fbey2diGid14xLp3532/uxhlkcYlK+da6uGedNlXh99p/uNmhMqjhVMby5hxCTWBZI7R6T5kOmmmHk3G0HgZb4sri8UOvHH49hxW0PY1mg4RYayk6Detum3YYppmAY16UfU/wcFGaVDCfq/kgB/YcwphrRN/M2VEkCTSk5BhkUp9CVC6tR90cKiA9RtQfU7iUevecNitCo20NWp/n1oHsHCljyb1bE83DQmXWnQZEd7Lg2y7fOb9K/IWMwwNEAmnoGkMwYaIUDZyL0BRQC2gdPdi9AhvgBCq/45vgxjOVdTTuWF+T0rXMPMC4ZGmlg5OaCLnJjgga/7fPU1gcZw91iPfhfK4DX8EcLUqBcP1uVHl/tz0jQfS36KTXXY7SJRFWG6rQCUs+rsE97XCGprCDDkJ7x3B9VyJg3HYXFlAJq20DJ2BXFgxow5RTcQjVe5PoztBF2pYDUeag+xOM8UcgnTwhT2DA8Td0JpYAG8FCvh9b+YtqmayoOmn+3sc3TDcEcf1Atoe0n64Ft0LXYaa7onqduA5lcDnbQGIF5DicEmgdjQmq90zlyzVIJnKQ5mpCAlOnqeqIWPH4S3Pc4PcF80TqQnJALdzBNqLjOPgnumwUhAZnkIQGxXdiCGUpCAnKm6OL9RnWGipCAksnzwWOMSRtmKAm7sGLQyORMQB2xQ/oz1ChcmFnBY/0qqUmC49A7cSLE4yaXFiglqAa1FOLazJuI4TZQhF/e49mV5KqYK/CmKk8BORQxbIFMhgSc4+5YBaRZgsBsXx5EPHV76e4XN5caJU1oP9wGSrYTOqZoF7OGZj6TFpEKCbiEdWx/Vw3GN8u3l0LJNdUwJpwXkMyCCTBJEf3nBgsJJKsHr1O5cGjWcbT4ZTLEERGywDWt0DFFBFsxF1YOmmswQaJELP1kWZAyHHgtfFRuha8LYJqmat5rUfU9TJBBIpZK6a9OwulrOKXB4XX4UAA/TqYIHnS9+cxzs1EoRHTAkyvZLO8KZyQPXR5tgT0UwVMeVfk+FkjED5iX9rr8QsHgFw6evW1CymgS+Xb3WbgOSCkgA6GoMJXVSbvxcWhtSRZLJQihroFsqa5VCtirAAi+XOXf7kIdTji6YiomhTIfrp8LSwjdwDn7EU44OCxSuq+urEQroMaNa1HVStMOdlB3FYdbuuu1Ah4pLluhD4ioVppmvri9tKosKBhQyjcwnIWDasWNsqaaE047ftsnoa441RyUkRwooM4K8YPW89Qjp4GujDmqkDQyoKq2QsDk+/yJcWV/BYKmjDkqHx5ZpU+LTtSV7Oxysbpod7f2pjpnPGAFApUxr9AKp0H3xwrpe4ZBxTXhB6Er5zFPMQzaZWsxy5hjCdh7kNKV85iniEv5zrmHmlrBZtxC0thJpQNamCyl6qG5TPZEQUMWEOEAKQy5AmGorFzBNO5NS7JnEBSqZ1JTbWvw68MUUjEYkoh1t6ntRZAF/o4i3vxz0G3FkmCd89B54X5MDkCbu3196tbSPcgZ5B2H3sJrnXh+JWqClVdDW2Cf8g2rCoagfIRmQC2bntFdy4M1UmqSH7ms8l1JPKpahQQkFpCIWkYPY96tI0is3ZNG3J5gJAGJGCIS4932JN62Uw6XcuX9iJuUjSwgcbSDkGhIpgwFHccX0uOHr7Jw7SH260ptkXgqAvahOaUEtspiLGShbeoYYxujiOlvqefO1xgJdrSaKDLA0ds5qZFWOiBVAYmYuwYFsVHQNgYbt6ga1uvnpntldR7vVgzOKmhdlmBsETuEKlp7rb/GLRaYacQg8f1cbz52nHIde2nPexDDnbIm092TMhOwj78h2IQ2YBQM1uc4f5RV9o7IXMA+fdeOv01dIkioDcqgZb22uM/YBDxOb5u6a70lZTUYAelvrAgvKAlGZSlZWpuKiQgYhAT1OF9mAs5gZHgZxfB7U+zRLfrJqOTXL/xktBBwj7ZBNoTYmoRgM2bMmDHjE/8BtEW7Lury1CIAAAAASUVORK5CYII=" alt="clock" width="80">
+                    <h3 class="text-xl mt-5 mb-3">24/7 Emergency Services</h3>
+                    <p class="text-center text-gray-500">Fast and reliable emergency HVAC services available 24/7.</p>
+                </div>
+                <div
+                    class="card w-full lg:w-1/3 bg-white py-8 px-3 xl:px-10 flex flex-col items-center rounded-2xl hover:shadow-2xl">
+                    <img src="data:image/png;base64,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" alt="labor" width="80">
+                    <h3 class="text-xl mt-5 mb-3">Experienced Professionals</h3>
+                    <p class="text-center text-gray-500">Highly trained and certified HVAC experts with years of
+                        industry experience.
+                    </p>
+                </div>
+                <div
+                    class="card w-full lg:w-1/3 bg-white py-8 px-3 xl:px-10 flex flex-col items-center rounded-2xl hover:shadow-2xl">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAqrSURBVHgB7VxNc9NIGn67JTsZyIe5TdUsQdynhrCnvcW5zZ4m3GanCJhfQHLbG8kvSPILMBOW2hvJcU5xbnsjYX5AlLBbxQ0n4J1MLHXP+0oyZdQt66vlQE2eKspElmX14+7343nfFsAVrnCFK/x5weCS0Wg1Gufe1Dzj/A4XcBvvaBZvywEmGxLfpnOYZC69ShBd/P+x4HAkhTictD8cdNvdLlwiLoXAyft/aVrAl4DDArIyD2XA4AAE7Psgds6f/7cDY8bYCPxIGoOHEM2sCuDiPO1c+GKr/+J/BzAGVE5gQBxjT/CrmjBWsA6u/Xbv55NnUCEqI/DyiFPg4ijXqiLSOIGTra8dy689zUMcOgsXb6QjJRwzJl0mpSuF3fUFBA7Ctj0nOI8xR0qGDobdwXPwNY/9lG3f6q+ft9+6YBBGCfzqwdxjLmEN0m0cEbODg9qvWdZOt+0W8qSTLQd/LL+JzDZxJD9k+V4BsP7b9skmGIIRAikU6cvpDRCsNfJEKTuCs50Jzp8VJS35HpxG3/eXJLAnOChn9NmyXbPer5oIgUoTSEuW+/W9kTeNxDGQ6x/GFGZMof0VjD9NIdL1rYvFsku6FIHXW9/MS996OeJGXS7l6vvnb3bgEnB9+WYrZUa64Pv3eiVCHgsKgsgD36KZ97XufSZhq2bzf5z9fDKWeEyH/uuzA+uvN3a5kDcSHE4DOP+x/u3UL/1f37+FAig0Awfkgd5od8GXq70Xb9rwGYFmIw53AxLv2V8sMhNzE5hi89CucLQrrgufIchrc1+MuPf8NjEXgeRtL/yZV18ieQOkkVizzu7m8c4ccqDvTW9+yeQR6B4F3qsM8mYFTt+f3oAcyOxEKEhmwP6peeuLIW8A76DbJeeC2cwSU2wim7fvzJ56r0//k+VamZZwmJ7VX4FqgLtI3t2qyJv80XEmJ7vdqjS/MJMRCeO6uJvFHmZawpZXWwOd92KwUhV56DX3rJo46vsz7649mHsCFSC8d7mqeath+RNPIQNSl3Dg/gNVRUG7t32yDhUgCjlWBn/jMmlOfDe9f/H6zAXDoFhx4rtZihP/FnvLyfKdqTOQInnNYbJ7lZAXfKdUlRxSYqAi2DZf0zkVyazUmT+SQJoJWq+L+lqVdg8lrVuatxZIY4QKQMKGJXVLWTanUr5zpBMhO6TR9VxcurfBIIL4Usw8Rq/YzKAjupJBW/CLZ6a1Pf14Wae3fbyY9JnEGRika5rBMCkegUFM37+5hI7iiAU6YiYR1qFzMSrYo8+CQeAPqDFLo2dh8hL2+IrmqGtSkiLvKhh7CcWKTA591qSHDscmO/HjkophCUgkEI32gnKQBWqzEdDAw1lXDnSN6w/mHoIhCMF21S+BxOtrbWBYEOJ7scNdzBNvmwhqaz8583UrCGD1kDQL2CEV0FFPPMWZNosF9SaKskkzIXPgm4ZQ2RZHEFsVaLoWdavP1l3E0k/ZHVMZQd3yN7S/HRLn29ajBA+/FQoBckNDJAa+NVrKpe0zeeRr9+d2WWzWRcu4Ez8/aQnrlm8HDIDSQr1zgvXe8zcjc2p67//bx/eQaE2JkrXIm4MBYBjV0Rxe0J2rEEhTWKfe+pzvgwHUvJpOGUbndLIGWa9hW+TglNWASooRr0yVQuUgcqL7gRQCzz1PHaCEA1OBs49qh+b6u5ADQUVPgjILg5qxAdD1MdZ048c9b0q5d4VAJrlyEl7sGAwBi+dG7CgDocwShk4HTEGAsuJ8DTcKgZxpUjecgWAINpOuchANdmgbs4M8ItlNCJdyN7ChZts33PgBHTeKF5aYh7KYh2S6QReEZVsd4Qsa9LA9QS9aP8JUqo0zdLcvhGuJWvf836PNRmQ316AChGOORQpB7+KnUAhkmqyAelXAEKIwYQvDBE0GwVp4vFW3UGWzBOamc8FHgOyRZGj35CGumVcXnn9Ydfuaj2O2WIxAjY214RJQt/nmhS8eprdgBGiETZiSft0mvRDB9eU5l9KuKhqGCJYtsdQZPyrTvbBOd/M82wWDoFk4orCTFQ7NWFr6VSjWPtRUZ8cgncBxIQyKT26T8S9JZJgPL9/MJMGbhhrGCDXM8HllLbmBIyAiMefFDAO2AjUk9Po5wx3W+mp5bgVMwQt7Ej9B1Ow+DNUGMlz7Me8zwb1GH6pF1ICkxHakUFODJUYGDQrC0TsuJOmGOBtoKW/CGKGGMZIdq86HOWAQtZ++CQLSLJ40CmXc6M+AYBIVbE+0pOrJG6T09F+4pT20pRkzhnin8WPqEtYsHVMpEuWSJJujF31F//D/uboABiD7GcaAatKPSs88GIBuzGhr3fgxhUChOQlnpK7Ikxthsj+8/NjKVJlCkWSHyiFDPzaydSd+SGQh0GJCN/2bYAC6cqUuv8x8PV3QbyhrYpofQseNQqBt2zoCHRNam9Tk1JzD46LXRnOjzBK0i++gJIK8XCPp2faHdAIjqUg50YTWljC7nb6Y2csrJoQdE+ogBbcOoSRQ3W4qB5ETnSKfFEhrxFO2ACWRVPWiVC0SE54OPHQSaLZSp1jUbRq/jhndUmpNllZQ1haVyLDLiopKIzqihuFKkAeKk0DDzkInpP8sChFlJa28RaXEzgRUQt7FLyIErP72r/KbVKLmIdOpFzU7lS4qJdxbYjdGci6skcw5Zz+AAfS237QxP7xbNgf+CFy6NYuvggEkNFN1ks5PJFAnmWdptsmKHmYLpMiwIP8tLvNH2ykWTex8onq4TmK78PlW0mcKNBeNbrYpgo973oBqsZn6Y4KiEv3IRltNlueOFAIljvd58nhHEpjgTICUkyp3H11bvvUyXjxHp7KDN7sLvnXQM5DrxpFol1Mc00g9MCnsEIxtmCpiayHVpJ3II9tZBXkUgyY1kqZ59VRBVd/yFWwHqKRvmaDLWEzWZeKgHvCkRtK0z6YSmBj8ohBgsitqGBM13h6OAki1rmqnZ9QDrhtHpscFMMgAE9sBiiBoM4EovawAJrZvZCKQcD2Uy3X6nZF9t+PGyD1/mDD0MiYMmQkkXL9/s50w3b8oElM2TObKaHJV5agrKmmPGfUs51VULgNpu03zZjS5CEyp5372JGbZqpvX3uauC5NhZT6/B/r0KzDKVXnnMqB7ontLIK8LFr9XRArLZQM/uSGsfoElknatQ1XPacmL8IkiM0/QMawknELkLfbaxQL0ws9M6P/afVv/9sYvksvvmZZENs+ltVSfn+32D09Lq8RFQPtIPDn5EuPI7xNOcZG8vxclj1B4Bg6QsgN8ANeX4tG4nq6W8bFTRvY5lyaQEKi4ntgctZ8igkvpUY2f7ZreA0xL9Xcx8xCFjqVURUfKZxRRmAjQjRA4QBRsU46cJjTgjcsdjCk7Pr/YL2onA/sW1pqpXrOU6XsFrPcMqOoDGCWQEKR9nljLMBuH7+JAkliANRCq6/oD4SBqq/N5v2Fx1rCih49RoR/Ll020bU7m7xi9B6UwjBM4QIanBo0HFT92qjICBwiFysxKszmM6XldlRM4QBA3crGCS2+hwllZidQ/CmMjcBhBqSDce7YArORDaEPxdX+cpA3jUggcBoVAnufN+9FjkCVjt5CMwJuiDXXoldHmnLDxEx0NnNIuTkuIQ+rjqUorvMIVrnCFK6TjD1jXPBg572WzAAAAAElFTkSuQmCC" alt="dollar-circle" width="80">
+                    <h3 class="text-xl mt-5 mb-3">Affordable Pricing</h3>
+                    <p class="text-center text-gray-500">Transparent and competitive pricing with no hidden fees.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past work section -->
+        <section id="past-work" class="container past-work-section py-10 my-10">
+            <div class="grid lg:grid-cols-2 gap-10">
+                <div>
+                    <h2 class="text-left mb-10">Past Work That Speaks for Itself</h2>
+                    <p class="text-gray-500">Explore some of the outstanding HVAC projects we’ve proudly completed.
+                        Every image reflects our
+                        unwavering commitment to quality, reliability, and expert craftsmanship — from flawless
+                        installations to seamless maintenance. These are just a few examples of the exceptional results
+                        we deliver for homeowners like you.</p>
+
+                    <a href="#" class="btn mt-20 inline-block">Explore Our Work</a>
+                </div>
+                <div
+                    class="card bg-green-800 text-white pt-7 pb-5 px-5 rounded-3xl hover:shadow-xl duration-300 hover:scale-100 hover:translate-y-[-1rem]">
+                    <h3 class="mb-3">Efficient Home Heating Upgrade</h3>
+                    <p>Installed a high-efficiency furnace system, reducing energy costs and improving comfort for the
+                        homeowners.</p>
+                    <div class="mt-5">
+                        <img class="rounded-3xl" src="/assets/work-1-BPeJUMf8.jpg" alt="work with ac">
+                    </div>
+                </div>
+                <div
+                    class="card bg-green-800 text-white pt-7 pb-5 px-5 rounded-3xl hover:shadow-xl duration-300 hover:scale-100 hover:translate-y-[-1rem]">
+                    <h3 class="mb-3">Complete HVAC System Installation</h3>
+                    <p>Designed and installed a full heating and cooling solution for a newly built modern home.</p>
+                    <div class="mt-5 lg:h-98">
+                        <img class="rounded-3xl h-full" src="/assets/work-2-B9G-O6V7.jpg" alt="work with ac">
+                    </div>
+                </div>
+                <div
+                    class="card bg-green-800 text-white pt-7 pb-5 px-5 rounded-3xl hover:shadow-xl duration-300 hover:scale-100 hover:translate-y-[-1rem]">
+                    <h3 class="mb-3">Emergency AC Repair & Restoration</h3>
+                    <p>Rapid response service that restored cooling during peak summer heat, ensuring family comfort and
+                        safety.</p>
+                    <div class="mt-5 lg:h-98">
+                        <img class="rounded-3xl h-full" src="/assets/hero2-Cy5O9CCo.jpg" alt="work with ac">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HVAC project section -->
+        <section id="about" class="hvac-section container my-10 py-10">
+            <h2 class="mb-7">Save Big on Your Next HVAC Project</h2>
+            <div class="flex flex-col md:flex-row gap-7">
+                <div
+                    class="md:w-2/3 bg-[url('../img/offer-1.jpg')] bg-green-300 bg-blend-multiply h-120 bg-center bg-cover rounded-3xl flex flex-col justify-end">
+                    <div class="text-white backdrop-brightness-75 p-5 rounded-b-3xl">
+                        <button class="btn bg-white text-green-900">Hot Offer</button>
+                        <h3 class="my-5">Get $500 OFF New HVAC System Installation!</h3>
+                        <p>Upgrade your comfort and save big! Get an instant $500 OFF when you install a brand-new,
+                            energy-efficient HVAC system — limited time only!</p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 h-120 bg-[url('../img/ofer-2.jpg')]  bg-center bg-cover rounded-3xl"></div>
+            </div>
+        </section>
+
+        <!-- bring comfort section -->
+        <section class="bring-comfort-section container my-10 py-10">
+            <h2 class="mb-7">How We Bring Comfort to Your Home</h2>
+            <div class="grid lg:grid-cols-2 2xl:flex items-center gap-10 2xl:gap-5">
+                <div
+                    class="card lg:w-full 2xl:w-1/4 bg-[url('../img/comfort-1.jpg')] h-150 lg:h-120 bg-center bg-cover rounded-2xl shadow-lg hover:shadow-2xl flex justify-end items-end relative hover:scale-100 ">
+                    <div class="bg-[#EBFFF1] w-full p-6 h-1/4 lg:h-1/3 rounded-b-2xl">
+                        <h4 class="text-[1.2rem] mb-2">Schedule a Consultation</h4>
+                        <p>Contact us to book your free consultation with our HVAC experts.</p>
+                    </div>
+                    <div
+                        class="bg-white h-2/8 w-3/5 absolute top-0 right-0 rounded-bl-2xl hover:shadow-2xl transition-all duration-300">
+                    </div>
+                    <button class="btn absolute py-3 left-5 top-95 lg:top-65 rounded-lg"><i
+                            class="fa-solid text-[1.2rem] fa-calendar-days"></i></button>
+                </div>
+
+                <div
+                    class="card lg:w-full 2xl:w-1/4 bg-[url('../img/comfort-2.jpg')] h-150 lg:h-120 bg-center bg-cover rounded-2xl shadow-lg hover:shadow-2xl flex justify-end items-end relative hover:scale-100 ">
+                    <div class="bg-[#EBFFF1] w-full p-6 h-1/4 lg:h-1/3 rounded-b-2xl">
+                        <h4 class="text-[1.2rem] mb-2">Get a Custom Quote</h4>
+                        <p>We assess your needs and provide a clear, no-obligation quote.</p>
+                    </div>
+                    <div
+                        class="bg-white h-2/8 w-3/5 absolute top-0 right-0 rounded-bl-2xl hover:shadow-2xl transition-all duration-300">
+                    </div>
+                    <button class="btn absolute py-3 left-5 top-95 lg:top-65 rounded-lg"><i
+                            class="fa-solid text-[1.2rem] fa-table-list"></i></button>
+                </div>
+
+                <div
+                    class="card lg:w-full 2xl:w-1/4 bg-[url('../img/comfort-3.jpg')] h-150 lg:h-120 bg-center bg-cover rounded-2xl shadow-lg hover:shadow-2xl flex justify-end items-end relative hover:scale-100 ">
+                    <div class="bg-[#EBFFF1] w-full p-6 h-1/4 lg:h-1/3 rounded-b-2xl">
+                        <h4 class="text-[1.2rem] mb-2">Professional Installation</h4>
+                        <p>Our certified team installs your system with precision and care.</p>
+                    </div>
+                    <div
+                        class="bg-white h-2/8 w-3/5 absolute top-0 right-0 rounded-bl-2xl hover:shadow-2xl transition-all duration-300">
+                    </div>
+                    <button class="btn absolute py-3 left-5 top-95 lg:top-65 rounded-lg"><i
+                            class="fa-solid text-[1.2rem] fa-wrench"></i></button>
+                </div>
+
+                <div
+                    class="card lg:w-full 2xl:w-1/4 bg-[url('../img/comfort-4.jpg')] h-150 lg:h-120 bg-center bg-cover rounded-2xl shadow-lg hover:shadow-2xl flex justify-end items-end relative hover:scale-100 ">
+                    <div class="bg-[#EBFFF1] w-full p-6 h-1/4 lg:h-1/3 rounded-b-2xl">
+                        <h4 class="text-[1.2rem] mb-2">Enjoy Total Comfort</h4>
+                        <p>Experience efficient heating and cooling all year round.</p>
+                    </div>
+                    <div
+                        class="bg-white h-2/8 w-3/5 absolute top-0 right-0 rounded-bl-2xl hover:shadow-2xl transition-all duration-300">
+                    </div>
+                    <button class="btn absolute py-3 left-5 top-95 lg:top-65 rounded-lg"><i
+                            class="fa-solid text-[1.2rem] fa-house"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HVAC service section -->
+        <section id="service" class="hvsc-service-section container my-10 py-10">
+            <h2 class="mb-7">Our HVAC Services</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                <div class="lg:w-1/3">
+                    <div><img class="rounded-2xl shadow-lg" src="/assets/hvac-BIxMU3l2.jpg" alt="ac servicing"></div>
+                    <h3 class="mt-5">Air Conditioner Installation</h3>
+                    <p class="my-5">Stay cool all summer with fast, professional AC installations built to last.</p>
+                    <a href="#" class="btn inline-block">Explore Service</a>
+                </div>
+                <div class="lg:w-1/3">
+                    <div><img class="rounded-2xl shadow-lg" src="/assets/hvac-2-D21Ml9ep.jpg" alt="ac servicing"></div>
+                    <h3 class="mt-5">Heating System Repair</h3>
+                    <p class="my-5">Keep your home warm and safe with expert repair services for any heating system.</p>
+                    <a href="#" class="btn inline-block">Explore Service</a>
+                </div>
+                <div class="lg:w-1/3">
+                    <div><img class="rounded-2xl shadow-lg" src="/assets/hvac-3-DblwgfLp.jpg" alt="ac servicing"></div>
+                    <h3 class="mt-5">Indoor Air Quality Solutions</h3>
+                    <p class="my-5">Breathe cleaner, healthier air with advanced filtration and ventilation systems.</p>
+                    <a href="#" class="btn inline-block">Explore Service</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the people section -->
+        <section class="meet-people-section container my-10 py-10">
+            <h2 class="mb-7">Meet the People Behind the Work</h2>
+            <div class="flex flex-col xl:flex-row items-center gap-8">
+                <div class="xl:w-1/2">
+                    <img class="rounded-xl shadow-xl" src="/assets/meet-B-Jyeej-.jpg" alt="meet the people behind the work">
+                </div>
+                <div class="xl:w-1/2 flex flex-col lg:flex-row gap-8">
+                    <div class="lg:w-1/2 border-2 border-green-700 rounded-lg shadow-lg py-15 px-10 lg:px-3">
+                        <p class="font-sora text-gray-600 mb-10">“My mission is simple — to give every homeowner
+                            reliable,
+                            efficient
+                            comfort
+                            they can count on, every day.”</p>
+                        <h4 class="text-3xl mb-2 text-green-700">James Carter</h4>
+                        <p class="font-sora text-gray-600">Founder & Senior HVAC Specialist</p>
+                    </div>
+                    <div class="lg:w-1/2 border-2 border-green-700 rounded-lg shadow-lg py-15 px-10 lg:px-3">
+                        <p class="font-sora text-gray-600 mb-10">“I’m here to ensure every project runs smoothly and
+                            every
+                            customer feels
+                            heard, respected, and happy with our work.”</p>
+                        <h4 class="text-3xl mb-2 text-green-700">Michael Torres</h4>
+                        <p class="font-sora text-gray-600">Operations Manager & Customer Care Lead</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- HVAC insights section -->
+        <section class="hvac-insights-section container my-10 py-10">
+            <h2 class="mb-7">HVAC Insights</h2>
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-5 xl:gap-10 items-center">
+                <div class="card w-full lg:w-1/3 rounded-2xl shadow-lg hover:shadow-2xl">
+                    <div><img class="rounded-t-2xl w-full" src="/assets/ac-1-VaCL45Aw.jpg" alt="hvac insights"></div>
+                    <div class="border-b-2 border-gray-800 py-5 px-3">
+                        <p class="text-sm mb-3">25 Apr 2025</p>
+                        <h4 class="text-xl font-medium">5 Signs on Your AC Needs Maintenance</h4>
+                    </div>
+                    <a class="mt-5 px-3 inline-block py-5" href="#">Read More</a>
+                </div>
+                <div class="card w-full lg:w-1/3 rounded-2xl shadow-lg hover:shadow-2xl">
+                    <div><img class="rounded-t-2xl w-full" src="/assets/ac-2-DPvTKyaE.jpg" alt="hvac insights"></div>
+                    <div class="border-b-2 border-gray-800 py-5 px-3">
+                        <p class="text-sm mb-3">25 Apr 2025</p>
+                        <h4 class="text-xl font-medium">How to Save on Heating Bills This Winter</h4>
+                    </div>
+                    <a class="mt-5 px-3 inline-block py-5" href="#">Read More</a>
+                </div>
+                <div class="card w-full lg:w-1/3 rounded-2xl shadow-lg hover:shadow-2xl">
+                    <div><img class="rounded-t-2xl w-full" src="/assets/ac-3-DfI1U_eP.jpg" alt="hvac insights"></div>
+                    <div class="border-b-2 border-gray-800 py-5 px-3">
+                        <p class="text-sm mb-3">25 Apr 2025</p>
+                        <h4 class="text-xl font-medium">The Best Thermostat Settings for Efficiency</h4>
+                    </div>
+                    <a class="mt-5 px-3 inline-block py-5" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="text-center mt-10"><a href="#" class="btn inline-block">Explore All Articles</a></div>
+        </section>
+
+
+        <!-- Areas We Serve  -->
+        <section class="area-we-service container mt-10 py-10">
+            <h2 class="mb-5">Areas We Serve</h2>
+            <div class="row grid grid-cols-2 md:grid-cols-3 gap-5 lg:flex lg:justify-between items-center my-7">
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Los Angeles
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> San Diego
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> San Jose
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> San Francisco
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Sacramento
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Phoenix
+                </div>
+            </div>
+            <div class="row grid grid-cols-2 md:grid-cols-3 gap-5 lg:flex lg:justify-between items-center my-7">
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Las Vegas
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Denver
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Kansas City
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Charlotte
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> San Antonio
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Atlanta
+                </div>
+            </div>
+            <div class="row grid grid-cols-2 md:grid-cols-3 gap-5 lg:flex lg:justify-between items-center my-7">
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Jacksonville
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Indianapolis
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Raleigh
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Chicago
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Tampa
+                </div>
+                <div class="location-btn">
+                    <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.3%209C15.3%2010.3807%2014.1807%2011.5%2012.8%2011.5C11.4193%2011.5%2010.3%2010.3807%2010.3%209C10.3%207.61929%2011.4193%206.5%2012.8%206.5C14.1807%206.5%2015.3%207.61929%2015.3%209Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3cpath%20d='M19.0222%2017C20.4167%2018.9885%2021.0838%2020.0475%2020.6865%2020.8999C20.6466%2020.9854%2020.5999%2021.0679%2020.5469%2021.1467C19.9724%2022%2018.4875%2022%2015.5178%2022H10.0823C7.11256%2022%205.6277%2022%205.05316%2021.1467C5.0001%2021.0679%204.95344%2020.9854%204.9136%2020.8999C4.51624%2020.0475%205.18331%2018.9885%206.57783%2017'%20stroke='%230B5D1E'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.0574%2017.4936C13.7201%2017.8184%2013.2693%2018%2012.8002%2018C12.331%2018%2011.8802%2017.8184%2011.5429%2017.4936C8.45435%2014.5008%204.31524%2011.1575%206.33376%206.30373C7.42515%203.67932%2010.045%202%2012.8002%202C15.5554%202%2018.1752%203.67933%2019.2666%206.30373C21.2826%2011.1514%2017.1536%2014.5111%2014.0574%2017.4936Z'%20stroke='%230B5D1E'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="location emoji"> Orlando
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container bg-[#0B5D1E] py-15 text-white">
+        <form class="relative">
+            <div>
+                <input id="textfield"
+                    class="w-full p-7 outline-0 bg-white text-green-900 rounded-xl placeholder-transparent sm:placeholder-green-800"
+                    type="text" placeholder="Let us help you choose the perfect system for your home.">
+            </div>
+            <button type="submit" class="btn absolute top-3 right-2 lg:right-5 px-2 ">Free HVAC
+                Estimate</button>
+        </form>
+
+        <div class="flex flex-col lg:flex-row gap-10 justify-between mt-15 border-b-2 border-white pb-10">
+            <div class="lg:w-3/7">
+                <img src="/assets/CoolQuest-BLw8dy-m.svg" alt="coolQuest Logo">
+                <p class="my-7">Trusted local HVAC experts delivering reliable <br> heating and cooling solutions.</p>
+                <div class="flex gap-7">
+                    <span><a href="#"><i class="fa-brands fa-2x fa-facebook"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-2x fa-twitter"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-2x fa-linkedin"></i></a></span>
+                </div>
+            </div>
+            <div class="lg:w-2/7 flex flex-col gap-3">
+                <h3 class="mb-3">Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#service">Services</a>
+                <a href="#about">About</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="lg:w-2/7 flex flex-col gap-5">
+                <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; (555) 123-4567</p>
+                <p><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp; mail.coolquest.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp; 1234 Maplewood Drive, Houston, TX 77002, United
+                    States</p>
+            </div>
+        </div>
+        <div class="text-center mt-5 text-lg">&copy; 2025 all rights resereved</div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById("btn-bar");
+
+        toggleBtn.addEventListener("click", () => {
+            const navElement = document.getElementById("nav-ul");
+            if (navElement.classList.contains("hidden")) {
+                navElement.classList.remove("hidden");
+            } else {
+                navElement.classList.add("hidden");
+            }
+        });
+    </script>
+</body>
+
+</html>
